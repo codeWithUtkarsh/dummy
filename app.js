@@ -12,6 +12,11 @@ app.post('/api/send-data', (req, res) => {
   res.json({ message: 'Data received successfully' });
 });
 
+app.get('/api/get-data', (req, res) => {
+  const dummyData = { name: 'Alice', age: 25, city: 'Wonderland' };
+  res.json(dummyData);
+});
+
 app.listen(port, () => {
   console.log(`Server is running at http://localhost:${port}`);
 });
