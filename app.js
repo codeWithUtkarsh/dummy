@@ -10776,9 +10776,9 @@ app.get("/api/get-data", (req, res) => {
   for (i = 0; i <= 50 - 1; i++) {
     const dataObj = {
       time: dat[i],
-      min: minData[i],
-      max: maxData[i],
-      mean: meanData[i],
+      min: minData[i].toString(),
+      max: maxData[i].toString(),
+      mean: meanData[i].toString()
     };
     console.log({ dataObj });
     resp = [...resp, dataObj];
