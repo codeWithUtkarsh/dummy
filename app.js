@@ -10773,7 +10773,7 @@ app.get("/api/get-data", (req, res) => {
 
   const lengthh = dat.length;
   console.log({ lengthh });
-  for (i = 0; i <= lengthh - 1; i++) {
+  for (i = 0; i <= 50 - 1; i++) {
     const dataObj = {
       time: dat[i],
       min: minData[i],
